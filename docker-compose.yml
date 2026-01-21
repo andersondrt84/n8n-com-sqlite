@@ -4,12 +4,12 @@ services:
   n8n:
     image: n8nio/n8n:latest
     ports:
-      - "5679:5679"
+      - "5679:5678"
     environment:
       - DB_TYPE=sqlite
       - DB_SQLITE_DATABASE=/home/node/.n8n/database.sqlite
       - N8N_HOST=localhost
-      - N8N_PORT=5679
+      - N8N_PORT=5678
       - N8N_PROTOCOL=http
       - WEBHOOK_URL=http://localhost:5679/
     volumes:
