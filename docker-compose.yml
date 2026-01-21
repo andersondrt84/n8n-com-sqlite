@@ -4,7 +4,7 @@ services:
   n8n:
     image: n8nio/n8n:latest
     ports:
-      - "5679:5678"
+      - "5678:5679"
     environment:
       - DB_TYPE=sqlite
       - DB_SQLITE_DATABASE=/home/node/.n8n/database.sqlite
